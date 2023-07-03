@@ -7,7 +7,7 @@
 }
 
 header{
-    background: url(images/Fondo\ header.webp);
+    background: url(images/fondo.webp.webp);
     background-size: cover;
     background-position: center;
     height: 300px;
@@ -35,7 +35,7 @@ header h1{
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     grid-gap:30px;
     grid-row-gap: 30px;
-    width: 100%;
+    width: 60%;
     transition: .3s;
 }
 .contenedor .contenedor-items .item{
@@ -48,7 +48,57 @@ header h1{
     transition: .3s;
 }
 
+.contenedor-items .item:hover{
+    box-shadow: 0 0 10px #666;
+    scale: 1.05;
+}
+
 .contenedor-items .item .img-item{
     width: 100%;
+}
+
+.contenedor-items .item .titulo-item{
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.contenedor .contenedor-items .item .precio-item{
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.contenedor-items .item .boton-item{
+    display: block;
+    margin: 10px auto;
+    border: none;
+    background: black;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/*carrito*/
+.carrito{
+    border: 1px solid #666;
+    width: 35%;
+    margin-top: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: auto;
+    position: sticky !important;
+    top: 0;
+    transition: .3s;
+}
+
+.carrito .header-carrito{
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
 }
 
