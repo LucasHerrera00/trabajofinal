@@ -7,10 +7,86 @@
 }
 
 header{
-    background: url(images/fondo.webp.webp);
-    background-size: cover;
-    background-position: center;
     height: 300px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.nav2{
+    width: 200px;
+    height: 100vh;
+}
+
+.nav__link{
+    color: #303440;
+    display: block;
+    padding: 15px 0;
+    text-decoration: none;
+}
+
+.nav__link--inside{
+    border-radius: 6px;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.nav__link--inside:hover{
+    background: #F6F8FA;
+}
+
+.list{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 0 10px 10px 0;
+    background: #fff;
+    display: flex;
+}
+
+.list__item{
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    align-self: flex-start;
+    display: inline;
+    vertical-align: top;
+}
+
+.list__item--click{
+    cursor: pointer;
+}
+
+.list__button{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.arrow .list__arrow{
+    transform: rotate(90deg);
+}
+
+.list__arrow{
+    margin-left: auto;
+    transition: transform .3s;
+}
+
+.list__show{
+    width: 80%;
+    margin-left: auto;
+    border-left: 2px solid #303440;
+    list-style: none;
+    transition: height .4s;
+    height: 0;
 }
 
 header h1{
@@ -37,6 +113,7 @@ header h1{
     grid-row-gap: 30px;
     width: 100%;
     transition: .3s;
+    margin-top: 10px;
 }
 .contenedor .contenedor-items .item{
     max-width: 200px;

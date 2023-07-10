@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <script src="main.js" async></script>
+    <link rel="stylesheet" href="estilo.css">
+    <title>Tienda de basallito</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav2">
+            <ul class="list">
+  
+              <li class="list__item">
+                  <div class="list__button">
+                      <img src="assets/burger.svg" class="list__img">
+                      <a href="inicio.html" class="nav__link">Inicio</a>
+                  </div>
+              </li>
+  
+              <li class="list__item list__item--click">
+                  <div class="list__button list__button--click">
+                      <img src="assets/products.svg" class="list__img">
+                      <a href="#" class="nav__link">Productos</a>
+                      <img src="assets/arrow.svg" class="list__arrow">
+                  </div>
+  
+                  <ul class="list__show">
+                  <li class="list__inside">
+                      <a href="Remeras.html" class="nav__link nav__link--inside">Remeras</a>
+                  </li>
+  
+                  <li class="list__inside">
+                      <a href="Buzos.html" class="nav__link nav__link--inside">Buzos</a>
+                  </li>
+  
+                  </ul>
+              </li>
+            </ul>
+          </nav>
+    </header>
+
+    <section class="contenedor">
+        <!--contenedor de los elementos-->
+        <div class="contenedor-items">
+            <div class="item">
+                <span class="titulo-item">VANS OLD SCHOOL BLACK</span>
+                <img src="images/Vans old school black.webp" alt="" class="img-item">
+                <span class="precio-item">$38.400</span>
+                <button class="boton-item">Agregar al carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">JORDAN 6 RETRO TRAVIS SCOTT BRITISH KHAKI</span>
+                <img src="images/jordan 6 retro travis scott british khaki.webp" alt="" class="img-item">
+                <span class="precio-item">$86.400</span>
+                <button class="boton-item">Agregar al carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">NIKE AIR FORCE 1 LOW 07 WHITE</span>
+                <img src="images/NIKE AIR FORCE 1 LOW 07 WHITE.webp" alt="" class="img-item">
+                <span class="precio-item">$74.400</span>
+                <button class="boton-item">Agregar al carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">NEW BALANCE 550 SALT AND PEPPER</span>
+                <img src="images/NEW BALANCE 550 SALT AND PEPPER.webp" alt="" class="img-item">
+                <span class="precio-item">$67.300</span>
+                <button class="boton-item">Agregar al carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">NIKE DUNK LOW USC</span>
+                <img src="images/NIKE DUNK LOW USC.webp" class="img-item">
+                <span class="precio-item">$81.600</span>
+                <button class="boton-item">Agregar al carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">ADIDAS FORUM LOW BAD BUNNY</span>
+                <img src="images/ADIDAS FORUM LOW BAD BUNNY.webp" class="img-item">
+                <span class="precio-item">$115.000</span>
+                <button class="boton-item">Agregar al carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">JORDAS 4 RETRO OFF-WHITE</span>
+                <img src="images/jordan 4 retro off-white sail.webp" class="img-item">
+                <span class="precio-item">$92.500</span>
+                <button class="boton-item">Agregar al carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">NIKE DUNK LOW MICHIGAN STATE</span>
+                <img src="images/NIKE DUNK LOW MICHIGAN STATE.webp" class="img-item">
+                <span class="precio-item">$72.600</span>
+                <button class="boton-item">Agregar al carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">NIKE DUNK LOW TWO-TONED</span>
+                <img src="images/NIKE DUNK LOW TWO-TONED GREY.webp" class="img-item">
+                <span class="precio-item">$75.900</span>
+                <button class="boton-item">Agregar al carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">NIKE DUNK LOW COAST</span>
+                <img src="images/NIKE DUNK LOW COAST.webp" class="img-item">
+                <span class="precio-item">$76.300</span>
+                <button class="boton-item">Agregar al carrito</button>
+            </div>
+        </div>
+
+        <!-- carrito -->
+        <div class="carrito" id="carrito">
+            <div class="header-carrito">
+                <h2>TU CARRITO</h2>
+            </div>
+
+            <div class="carrito-items">
+                <!-- 
+                <div class="carrito-item">
+                    <img src="images/NIKE DUNK LOW MICHIGAN STATE.webp" alt="" width="80px">
+                    <div class="carrito-item-detalles">
+                        <span class="carrito-item-titulo">NIKE DUNK LOW MICHIGAN STATE</span>
+                        <div class="selector-cantidad">
+                            <i class="fa-solid fa-minus restar-cantidad"></i>
+                            <input type="text" value="1" class="carrito-item-cantidad" disabled>
+                            <i class="fa-solid fa-plus sumar-cantidad"></i>
+                        </div>
+                        <span class="carrito-item-precio">$72.600</span>
+                        <span class="btn-eliminar">
+                            <i class="fa-solid fa-trash"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="carrito-item">
+                    <img src="images/NIKE DUNK LOW COAST.webp" width="80px" alt="" >
+                    <div class="carrito-item-detalles">
+                        <span class="carrito-item-titulo">NIKE DUNK LOW COAST</span>
+                        <div class="selector-cantidad">
+                            <i class="fa-solid fa-minus restar-cantidad"></i>
+                            <input type="text" value="2" class="carrito-item-cantidad" disabled>
+                            <i class="fa-solid fa-plus sumar-cantidad"></i>
+                        </div>
+                        <span class="carrito-item-precio">$76.300</span>
+                        <span class="btn-eliminar">
+                            <i class="fa-solid fa-trash"></i>
+                        </span>
+                    </div>
+                </div>
+            -->
+                <div class="carrito-total">
+                    <div class="fila">
+                        <strong>TOTAL</strong>
+                        <span class="carrito-precio-total">
+                            $148.900
+                        </span>
+                    </div>
+                    <button class="btn-pagar">Pagar </button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</body>
+</html>
